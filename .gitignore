@@ -1,0 +1,5 @@
+# ignore anything 
+# except... external BuildRoot tree
+!.gitignore
+!README.md
+!br.LTPPxG2

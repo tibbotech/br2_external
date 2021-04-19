@@ -1,0 +1,7 @@
+config BR2_PACKAGE_SPISP
+    bool "Plus1 ISPBOOOT assembly helper apps"
+    default y
+    depends on BR2_cortex_a7
+    depends on BR2_PACKAGE_SPMAKE
+    help
+	ISPBOOOT.BIN assembly helper scripts

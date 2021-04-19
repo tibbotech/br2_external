@@ -1,0 +1,9 @@
+# arch
+BR2_arm=y
+BR2_arm926t=y
+
+# Toolchain
+BR2_KERNEL_HEADERS_5_4=y
+
+# Bootloaders
+BR2_TARGET_XBOOT=y

@@ -1,0 +1,35 @@
+config BR2_TARGET_XBOOT
+    bool "Plus1 Xboot"
+    default y
+    select BR2_TARGET_BNOOS
+    depends on BR2_arm926t
+    help
+	1-level (software) boot code after 0-level (hardware) ROM.
+	Running at arm926 co-processor:
+	1) init DRAM
+	2) starts U-Boot from USB|MMC|SPI|NAND
+	XBoot https://github.com/tibbotech/plus1_xboot
+
+if BR2_TARGET_XBOOT
+
+choice
+
+    prompt "Boot from"
+    default BR2_TARGET_XBOOT_EMMC
+    help
+	Select boot memory source
+
+config BR2_TARGET_XBOOT_EMMC
+    bool "EMMC"
+
+config BR2_TARGET_XBOOT_NAND
+    bool "NAND"
+
+endchoice
+
+config BR2_TARGET_XBOOT_CONFIG
+	string
+	default	"q628_Rev2_EMMC_defconfig"	if	BR2_TARGET_XBOOT_EMMC
+	default	"q628_Rev2_SPINAND_defconfig"	if	BR2_TARGET_XBOOT_NAND
+
+endif

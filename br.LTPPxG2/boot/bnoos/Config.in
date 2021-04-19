@@ -1,0 +1,7 @@
+config BR2_TARGET_BNOOS
+    bool "Plus1 arm926 code"
+    default y
+    depends on BR2_arm926t
+    help
+        Plus1 arm926 standalone application example
+	Bnoos https://github.com/tibbotech/plus1_Bnoos

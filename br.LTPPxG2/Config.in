@@ -1,0 +1,6 @@
+source "$BR2_EXTERNAL_LTPPxG2_PATH/boot/xboot/Config.in"
+source "$BR2_EXTERNAL_LTPPxG2_PATH/boot/bnoos/Config.in"
+source "$BR2_EXTERNAL_LTPPxG2_PATH/linux/Config.in"
+source "$BR2_EXTERNAL_LTPPxG2_PATH/package/spmake/Config.in"
+source "$BR2_EXTERNAL_LTPPxG2_PATH/package/xboot-sptools/Config.in"
+source "$BR2_EXTERNAL_LTPPxG2_PATH/package/spisp/Config.in"

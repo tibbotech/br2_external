@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SPMAKE
+    bool "Plus1 ISPBOOOT assembly Makefile"
+    default y
+    depends on BR2_cortex_a7
+    select BR2_PACKAGE_XBOOT_SPTOOLS
+    select BR2_PACKAGE_SPISP
+    help
+	sp7021 image makefile assembles ISP image from the parts

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_XBOOT_SPTOOLS
+    bool "Plus1 xboot-tools"
+    default y
+    depends on BR2_PACKAGE_SPMAKE
+    help
+	ISPBOOOT assemble helper scripts: add_xhdr, tcpsum

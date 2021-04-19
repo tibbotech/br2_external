@@ -1,0 +1,19 @@
+choice
+    prompt "Plus1 Linux kernel DTS name"
+    default DTS_LTPP3G2
+    depends on BR2_cortex_a7
+    help
+	DTS to use with the board
+
+config DTS_LTPP3G2
+    bool "LTPP3G2 Board"
+
+config DTS_EV
+    bool "EV Board"
+
+endchoice
+
+config BR2_LINUX_KERNEL_INTREE_DTS_NAME
+	string
+	default	"sp7021-ltpp3g2revD"	if	DTS_LTPP3G2
+	default	"sp7021-ev"		if	DTS_EV
