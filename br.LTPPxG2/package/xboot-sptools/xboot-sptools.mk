@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-XBOOT_SPTOOLS_VERSION = 1bfe8238e3f067ac2c35d5c2ac76accbfd3b837b
+XBOOT_SPTOOLS_VERSION = b2210ec08e53432c2d9f29b7dbed5e7ddcb56959
 XBOOT_SPTOOLS_SITE = $(call github,tibbotech,plus1_xboot,$(XBOOT_SPTOOLS_VERSION))
 XBOOT_SPTOOLS_LICENSE = GPL-2.0
 XBOOT_SPTOOLS_INSTALL_IMAGES = YES
