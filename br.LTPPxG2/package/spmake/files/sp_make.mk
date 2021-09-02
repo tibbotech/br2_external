@@ -92,13 +92,15 @@ ${D0}/${OUTD}/ISPBOOOT.BIN: ${D1}/${F_XBT}.img ${D0}/${OUTD}/nonos ${D0}/${OUTD}
 	${D0}/${OUTD}/kernel 0x2000000 \
 	${D0}/${OUTD}/rootfs 0x1E000000
 	
-	install -d ${D0}/${OUTD}/boot2linux_SDC
-	install ${D0}/${OUTD}/uboot0 ${D0}/${OUTD}/boot2linux_SDC/
-	install ${D0}/${OUTD}/kernel ${D0}/${OUTD}/boot2linux_SDC/
-	install ${D0}/${OUTD}/nonos  ${D0}/${OUTD}/boot2linux_SDC/
-	dd if=${D0}/${OUTD}/ISPBOOOT.BIN of=${D0}/${OUTD}/boot2linux_SDC/ISPBOOOT.BIN bs=1024 skip=0 count=64
-	install ${D0}/sp_tools/sdcard_boot/uEnv.txt ${D0}/${OUTD}/boot2linux_SDC/
-	${D0}/sp_tools/sdcard_boot/sdcard_boot.sh ${D0}/${OUTD}/boot2linux_SDC/
+# temporary disabled
+#	install -d ${D0}/${OUTD}/boot2linux_SDC
+#	install ${D0}/${OUTD}/uboot0 ${D0}/${OUTD}/boot2linux_SDC/
+#	install ${D0}/${OUTD}/kernel ${D0}/${OUTD}/boot2linux_SDC/
+#	install ${D0}/${OUTD}/nonos  ${D0}/${OUTD}/boot2linux_SDC/
+#	dd if=${D0}/${OUTD}/ISPBOOOT.BIN of=${D0}/${OUTD}/boot2linux_SDC/ISPBOOOT.BIN bs=1024 skip=0 count=64
+#	install ${D0}/sp_tools/sdcard_boot/uEnv.txt ${D0}/${OUTD}/boot2linux_SDC/
+#	${D0}/sp_tools/sdcard_boot/sdcard_boot.sh ${D0}/${OUTD}/boot2linux_SDC/
+# temporary disabled /
 
 #	install -d ${D0}/${OUTD}/boot2linux_USB
 #	${D0}/sp_tools/isp extract4boot2linux_usbboot ${D0}/${OUTD}/ISPBOOOT.BIN ${D0}/${OUTD}/boot2linux_USB/ISPBOOOT.BIN
