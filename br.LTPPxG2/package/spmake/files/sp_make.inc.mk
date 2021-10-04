@@ -14,7 +14,7 @@ OUTD=sp_out
 ###### rootfs : there are several of them
 
 ###### *** Xboot (arm926,Chip-B): pre-uboot, bootloader #1
-F_XBT=xboot-nand
+#F_XBT=xboot-nand
 F_XBT=xboot-emmc
 F_XBT=xboot
 

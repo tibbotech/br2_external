@@ -4,13 +4,13 @@
 #
 ################################################################################
 
-XBOOT_VERSION = 2ff5ece9eac4b3e6e60523fcc87e30b025c7c804
+XBOOT_VERSION = 4ffd9f28e95463b5bb12d5fed4bf79d8d78838b0
 XBOOT_SITE = $(call github,tibbotech,plus1_xboot,$(XBOOT_VERSION))
 XBOOT_LICENSE = GPL-2.0
 XBOOT_INSTALL_IMAGES = YES
 XBOOT_INSTALL_TARGET = NO
 
-XBOOT_DRAM_VERSION = 42936878d6d632103e5ce94c2740b5c827d3eddc
+XBOOT_DRAM_VERSION = 8d81f22b434238434ff590bd99cd7865bdcd8392
 XBOOT_EXTRA_DOWNLOADS = $(call github,tibbotech,plus1_draminit,$(XBOOT_DRAM_VERSION))/dram-$(XBOOT_DRAM_VERSION).tar.gz
  
 define XBOOT_EXTRACT_DRAM
