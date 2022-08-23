@@ -8,6 +8,8 @@ Plus1 (sp7021): [A Linux Chip for IoT and Industrial Control Applications](https
 
 ```
 brv="2021.02"
+// or latest stable BuildRoot release
+// brv="2022.05.1"
 git clone git@github.com:tibbotech/br2_external.git
 wget https://buildroot.org/downloads/buildroot-${brv}.tar.gz
 tar -xvf ./buildroot-${brv}.tar.gz
