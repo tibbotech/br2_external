@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-SPISP_VERSION = 48a0a8c6b880a30d27d3a4953777b34efc53a489
+SPISP_VERSION = $(call qstrip,$(BR2_PACKAGE_SPISP_VERSION))
 SPISP_SITE = $(call github,tibbotech,plus1_isp,$(SPISP_VERSION))
 SPISP_LICENSE = GPL-2.0
 SPISP_AUTORECONF = NO

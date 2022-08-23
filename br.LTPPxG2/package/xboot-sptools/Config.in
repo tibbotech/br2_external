@@ -4,3 +4,8 @@ config BR2_PACKAGE_XBOOT_SPTOOLS
     depends on BR2_PACKAGE_SPMAKE
     help
 	ISPBOOOT assemble helper scripts: add_xhdr, tcpsum
+
+config BR2_PACKAGE_XBOOT_VERSION
+	string "Custom xboot version"
+	help
+	  This option allows to use a specific official versions

@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-BNOOS_VERSION = 7d0effa360f58807578916786d17c56754bcf820
+BNOOS_VERSION = $(call qstrip,$(BR2_TARGET_BNOOS_VERSION))
 BNOOS_SITE = $(call github,tibbotech,plus1_Bnoos,$(BNOOS_VERSION))
 BNOOS_LICENSE = GPL-2.0
 BNOOS_INSTALL_IMAGES = YES

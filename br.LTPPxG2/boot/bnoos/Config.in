@@ -5,3 +5,8 @@ config BR2_TARGET_BNOOS
     help
         Plus1 arm926 standalone application example
 	Bnoos https://github.com/tibbotech/plus1_Bnoos
+
+config BR2_TARGET_BNOOS_VERSION
+	string "Custom B-CPU noos FW version"
+	help
+	  This option allows to use a specific official versions

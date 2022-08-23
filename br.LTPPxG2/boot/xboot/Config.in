@@ -32,4 +32,14 @@ config BR2_TARGET_XBOOT_CONFIG
 	default	"q628_Rev2_EMMC_defconfig"	if	BR2_TARGET_XBOOT_EMMC
 	default	"q628_Rev2_SPINAND_defconfig"	if	BR2_TARGET_XBOOT_NAND
 
+config BR2_TARGET_XBOOT_VERSION
+	string "Custom xboot version"
+	help
+	  This option allows to use a specific official versions
+
+config BR2_TARGET_XBOOT_DRAM_VERSION
+	string "Custom xboot DRAM part version"
+	help
+	  This option allows to use a specific official versions
+
 endif

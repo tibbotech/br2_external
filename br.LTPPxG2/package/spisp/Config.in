@@ -5,3 +5,8 @@ config BR2_PACKAGE_SPISP
     depends on BR2_PACKAGE_SPMAKE
     help
 	ISPBOOOT.BIN assembly helper scripts
+
+config BR2_PACKAGE_SPISP_VERSION
+	string "Custom spisp version"
+	help
+	  This option allows to use a specific official versions
