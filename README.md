@@ -38,6 +38,6 @@ cp ./br.a5/output/images/a926*.bin ./br.a7/output/images/
 ## Generating ISPBOOOT image
 ```
 cd ./br2_external/br.a7/output/images/;
-make -f ./sp_make.mk D1=.
+make -f ./sp_make.mk D1=. F_XBT=xboot F_UBT=u-boot.bin F_KRN=uImage F_ROO=rootfs.ext4
 ```
 On success you'll get the ISPBOOOT.BIN at ./br2_external/br.a7/output/images/sp_out/
